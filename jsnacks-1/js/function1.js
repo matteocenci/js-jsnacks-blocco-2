@@ -1,24 +1,36 @@
-// Fai inserire un numero, che chiameremo N, all’utente.
-// Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
-// Ogni volta che ne crei uno, stampalo a schermo.
 
+/**
+ * Description la funziona crea un array di 10 numeri random.
+ * @returns {array}
+ */
+function generateArray () {
 
-// function generateArray (N) {
+    let nArray = [];
 
-//     let nArray = [];
+    for (let i = 0; i < 10; i++) {
+        let numberInArray = getRndInteger(1, 100);
 
-//     nArray = N;
+        nArray.push(numberInArray);
+    }
 
-//     for (let i = 0; i < 10; i++) {
-//         let casualNumber = Math.floor(Math.random(i) * 100)
-
-//         nArray.push(casualNumber);
-//         console.log(nArray);
-//     }
-
-//     return nArray;
-
+    return nArray
     
+}
 
 
-// }
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+/**
+ * Description stampa l'array in pagina
+ * @param {array} arrayToPrint
+ */
+function printArray(arrayToPrint) {
+
+    const resultElem = document.getElementById("result");
+    console.log(resultElem);
+
+    resultElem.innerHTML += `<li> ${arrayToPrint} </li>`
+
+}
