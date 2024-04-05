@@ -26,3 +26,17 @@ function wordLength (sameLength) {
     return sameLength;
 
 }
+
+/**
+ * Description
+ * @param {any} wordToPrint
+ * 
+ */
+function printWord(wordToPrint) {
+
+    const resultElem = document.getElementById("result");
+    console.log(resultElem);
+
+    resultElem.innerHTML += `<li> ${wordToPrint} </li>`
+
+}

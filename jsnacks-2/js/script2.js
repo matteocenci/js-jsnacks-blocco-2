@@ -11,5 +11,7 @@ console.log(firstWord);
 let secondWord = prompt("Dammene un'altra: ");
 console.log(secondWord);
 
-console.log(wordLength(firstWord));
+let wordsLength = wordLength(firstWord, secondWord);
+console.log(wordsLength);
 
+printWord(wordsLength);
