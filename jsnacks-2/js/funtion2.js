@@ -6,24 +6,24 @@
  * Description
  * @returns {sameLength}
  */
-function wordLength (sameLength) {
+function wordLength (word1, word2) {
 
-    for (i = 0; i < firstWord.length; i++) {
+    
 
-        console.log(firstWord.length);
-        console.log(secondWord.lenght);
-
-        if (firstWord.length == secondWord.length) {
-            console.log("Hanno la stessa lunghezza");
-        } else if (firstWord.length > secondWord.length) {
-            console.log("E' più lunga la parola " + firstWord);
-        } else {
-            console.log("E' più lunga la parola " + secondWord);
-        }
-
+    console.log(word1);
+    console.log(word2);
+    
+    if (word1.length == word2.length) {
+        console.log("Hanno la stessa lunghezza");
+    } else if (word1.length > word2.length) {
+        console.log("E' più lunga la parola " + word1);
+    } else {
+        console.log("E' più lunga la parola " + word2);
     }
 
-    return sameLength;
+    
+
+    
 
 }
 
